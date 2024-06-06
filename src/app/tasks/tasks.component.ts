@@ -3,6 +3,8 @@ import { Component, Input } from '@angular/core';
 import { TaskComponent } from './task/task.component';
 import { NewTaskComponent } from './new-task/new-task.component';
 
+import { type NewTaskData } from './task/task.model';
+
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -54,6 +56,17 @@ export class TasksComponent {
   }
 
   onCancelAddTask() {
+    this.isAddingTask = false;
+  }
+
+  onAddTask(formData: NewTaskData) {
+    this.tasks.unshift({
+      id: new Date().getTime().toString(),
+      userId: this.userId,
+      title: formData.title,
+      summary: formData.summary,
+      dueDate: formData.date,
+    });
     this.isAddingTask = false;
   }
 }
