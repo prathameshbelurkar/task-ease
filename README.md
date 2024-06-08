@@ -1,8 +1,8 @@
-## <center>Task-Ease</center>
-
-<center><img src=".github/beet-complete-task.gif" width="300" /></center>
-
-### <center> Harmonizing Task Management Across Your Daily Lives </center>
+<div style="text-align: center;">
+   <h2>Task-Ease</h2>
+   <img src=".github/beet-complete-task.gif" width="300" />
+   <h3>Harmonizing Task Management Across Your Daily Lives</h3>
+</div>
 
 <br>
 
